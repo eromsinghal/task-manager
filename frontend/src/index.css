@@ -1,0 +1,37 @@
+/* index.css */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  /* Animated gradient from a soft blue to a lighter blue */
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  background-size: 200% 200%;
+  animation: gradientAnimation 20s ease infinite;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Keyframes for smooth gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Optional subtle texture overlay for extra depth */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://www.transparenttextures.com/patterns/diagonal-noise.png') repeat;
+  opacity: 0.05;
+  z-index: -1;
+}

@@ -1,0 +1,67 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logoIcon {
+    margin-right: 10px;
+  }
+  
+  .logoText {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Create Task and Profile buttons use the same blue style */
+  .createButton,
+  .profileButton {
+    padding: 8px 14px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  .createButton:hover,
+  .profileButton:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Logout button uses red (similar to the delete color) */
+  .logoutButton {
+    padding: 8px 14px;
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logoutButton:hover {
+    background-color: #c0392b;
+  }
+  

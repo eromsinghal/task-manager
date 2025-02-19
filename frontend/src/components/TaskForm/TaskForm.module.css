@@ -1,0 +1,97 @@
+:root {
+  --primary-color: #007bff;
+  --primary-hover: #0056b3;
+  --border-color: #ccc;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --text-color: #333;
+  --font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.formContainer {
+  margin-bottom: 20px;
+  padding: 25px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 10px var(--shadow-color);
+  animation: fadeIn 0.5s ease-out;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+.input,
+.textarea,
+.select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  font-family: var(--font-family);
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: var(--font-family);
+}
+
+.button:hover {
+  background: var(--primary-hover);
+}
+
+.cancelButton {
+  background: #6c757d;
+}
+
+.cancelButton:hover {
+  background: #5a6268;
+}

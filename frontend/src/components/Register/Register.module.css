@@ -1,0 +1,106 @@
+:root {
+  --primary-color: #28a745;
+  --primary-hover: #218838;
+  --border-color: #ddd;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --text-color: #333;
+  --font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 10px var(--shadow-color);
+  animation: fadeIn 0.5s ease-out;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: var(--primary-hover);
+}
+
+.error {
+  color: #e74c3c;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 500;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.link a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.link a:hover {
+  color: var(--primary-hover);
+}
